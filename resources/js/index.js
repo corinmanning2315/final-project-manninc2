@@ -42,29 +42,9 @@ scoreholderOne.value = 0;
 scoreholderTwo.value = 0;
 var roundCounter = 1;
 
-
-
-
 function selectQuestion() {
    questionSelector = Math.floor(Math.random() * Math.floor(questionsArrayMax));
 };
-
-function clearPlaceholders() {
-   answerOne.placeholder = "";
-   answerTwo.placeholder = "";
-   answerThree.placeholder = "";
-   answerFour.placeholder = "";
-   answerFive.placeholder = "";
-   answerSix.placeholder = "";
-   answerSeven.placeholder = "";
-   answerEight.placeholder = "";
-}
-
-function clearStrikes() {
-   strikeOne.value = "";
-   strikeTwo.value = "";
-   strikeThree.value = "";
-}
 
 function setPlaceholders() {
    scoreholder.value = 0;
@@ -168,15 +148,6 @@ newGameButton.addEventListener('click', function (event) {
       teamTurn = 1;
    }
 });
-
-function playBuzzer() {
-   buzzerSound.play();
-};
-
-function playCorrect() {
-   correctCounter += 1;
-   correctSound.play();
-};
 
 function addStrike() {
    if (strikeOne.value == "") {
@@ -305,3 +276,29 @@ function guessChecker() {
         playBuzzer();
     }
 }
+
+function clearPlaceholders() {
+    answerOne.placeholder = "";
+    answerTwo.placeholder = "";
+    answerThree.placeholder = "";
+    answerFour.placeholder = "";
+    answerFive.placeholder = "";
+    answerSix.placeholder = "";
+    answerSeven.placeholder = "";
+    answerEight.placeholder = "";
+}
+ 
+function clearStrikes() {
+    strikeOne.value = "";
+    strikeTwo.value = "";
+    strikeThree.value = "";
+}
+
+function playBuzzer() {
+    buzzerSound.play();
+ };
+ 
+ function playCorrect() {
+    correctCounter += 1;
+    correctSound.play();
+ };

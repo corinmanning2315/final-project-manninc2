@@ -19,7 +19,7 @@ body{
 
 .scoreboard {
     background: radial-gradient(circle, rgba(193, 207, 227, 1) 0%, rgba(72, 127, 214, 1) 37%, rgba(24, 60, 119, 1) 100%);
-    margin-left: -7%;
+    margin-left: -7.5%;
     margin-top: 3%;
 }
 
@@ -49,4 +49,8 @@ input::placeholder {
 
 label {
     color: white;
+}
+
+#userGuess{
+    width: 390px;
 }

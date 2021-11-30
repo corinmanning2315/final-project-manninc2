@@ -16,7 +16,6 @@
             integrity = "sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin = "anonymous"></script>
         <title>Family Feud</title>
-
     </head>
 
     <body>
@@ -62,6 +61,10 @@
                     </div>
                 </div>
 
+                <div class="row justify-content-center" style="margin-top: 2%;">
+                    <label id="question" class="question">?</label>
+                </div>
+
                 <div class="row justify-content-center">
                     <div class="col-2" style="margin-right: 0.5%;">
                         <input id="answerOne" type="text" class="scoreboard" disabled placeholder="">
@@ -103,11 +106,6 @@
                 </div>
 
                 <div class="row justify-content-center" style="margin-top: 2%;">
-                    <label id="question" class="question">?</label>
-                </div>
-
-                <div class="row justify-content-center" style="margin-top: 2%;">
-                    <label><b>Guess</b></label>
                     <input id="userGuess" class="form-control" type="text">
                 </div>
 
@@ -116,7 +114,7 @@
                     <button id="newGameButton" class="btn btn-light" type="submit">New Game</button>
                 </div>
 
-                <div class="row justify-content-center" style="margin-top: 2%;">
+                <div class="row justify-content-center" style="margin-top: 2%; margin-bottom: 5%;">
                     <input class="strike" id="strikeOne" type="text" disabled placeholder="">
                     <input class="strike" id="strikeTwo" type="text" disabled placeholder="">
                     <input class="strike" id="strikeThree" type="text" disabled placeholder="">
