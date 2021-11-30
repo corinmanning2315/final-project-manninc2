@@ -1,5 +1,52 @@
 body{
-    background: blue;
+    background: #0c29cf;
     text-align: center;
+}
+
+#startButton, #submitButton, #newGameButton{
+    background: linear-gradient(#ff5700, #ffd839);
+    color: white;
+    font-weight: bold;
+}
+
+.scoreholder {
+    opacity: 95%;
+    background-color: #0c29cf;
+    margin: 1.8%;
+    outline: black solid;
+    font-weight: bold;
+}
+
+.scoreboard {
+    background: radial-gradient(circle, rgba(193, 207, 227, 1) 0%, rgba(72, 127, 214, 1) 37%, rgba(24, 60, 119, 1) 100%);
+    margin-left: -7%;
+    margin-top: 3%;
+}
+
+.scoreboardcontainer {
+    outline: white solid 4px;
+}
+
+.strike {
+    width: 40px;
+    color: red;
+}
+
+input {
+    text-align: center;
+    color: black;
+}
+
+.question {
+    font-weight: bold;
+    color: white;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: black;
+}
+
+label {
     color: white;
 }
